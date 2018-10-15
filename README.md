@@ -1,3 +1,1 @@
-
-This Website is under Construction!
-Come Back Later
+Test Source Code for the CMR MUN Website. The code here is all under testing and is not complete. 
