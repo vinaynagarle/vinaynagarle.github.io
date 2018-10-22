@@ -29,13 +29,18 @@
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
+	
     <!-- Plugin CSS -->
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/creative.min.css" rel="stylesheet">
 
+
+<!-- ... -->
+<script defer="" src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script defer="" src="all.js"></script>
+	
 <style>
   b , strong {
   font-weight: bolder;
@@ -55,16 +60,6 @@
   .rightalign {
   text-align: right;
   }
-.fa-paper-plane:before {
-  content: url(https://image.ibb.co/fhR5RL/securitycouncil.png);}
-  .fa-code:before{
-    content: url(https://image.ibb.co/iA8iff/saarc.png);}
-.fa-heart:before{
-  content: url(https://image.ibb.co/bKyG0f/crisis.png);}
-  .fa-heartbeat:before {
-    content: url(https://image.ibb.co/iXPm80/hrc.png);}
-  .fa-gem:before {
-    content: url(https://image.ibb.co/csnHFf/unga.png);}
     .change-sty {
       border-color: #ff5c5c;
       background-color: #ff5c5c;
@@ -79,7 +74,18 @@
   .fa-facebook-f:before{
   content: url(https://upload.wikimedia.org/wikipedia/commons/c/c2/F_icon.svg);
   }
-    </style>
+  .timer {
+    text-align: center;
+  font-size: 40px;
+  font-color: #141414!important;
+  }
+  .timertext {
+  font-size:35px;
+  font-color: white!important;
+  }
+  .fa-facebook-f:before {
+  content: "\f39e"; }
+    </style
   </head>
 
   <body id="page-top" style="background-color: #ff5c5c">
@@ -87,7 +93,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">MODEL UNITED NATIONS</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">CMR MODEL UNITED NATIONS</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -101,7 +107,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#portfolio">Gallery</a>
-            </li>
+            </l	i>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
@@ -132,6 +138,37 @@
         </div>
       </div>
     </header>
+	<div class="row">
+	<div class="col-lg-12 text-center">
+	<p class="section-heading timertext timerfont">Meet you in</p>
+	<p id="timer" class=" btn timer btn-xl"></p>
+</div>
+</div>
+<script>
+// Timer Code for the MUN event
+var countDownDate = new Date("Dec 25, 2018 15:37:25").getTime();
+
+var x = setInterval(function() {
+
+    var now = new Date().getTime();
+    
+    var distance = countDownDate - now;
+    
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+     
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("timer").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+
 
     <section class="bg-primary" id="about">
       <div class="container" style="background-color: #141414>
@@ -184,7 +221,7 @@ VIKAS TRIPATHI<br />
         <div class="row">
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-4x fa-gem text-primary mb-3 sr-icon-1"></i>
+			<img src="https://image.ibb.co/csnHFf/unga.png"><br />
               <h3 class="mb-3">UNGA-SPE</h3>
               <p class="text-muted mb-0 committefont"><b>United Nations General Assembly</b></p>
 			  <p class="text-muted mb-0 leftalign committefont">The General Assembly is one of the six main organs of the
@@ -199,7 +236,7 @@ development, peace, security and international law.</p>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-4x fa-code text-primary mb-3 sr-icon-2"></i>
+			<img src="https://image.ibb.co/iA8iff/saarc.png">
               <h3 class="mb-3">SAARC</h3>
               <p class="text-muted mb-0 committefont" ><b>SAARC</b>, the South Asian Association for Regional
 Cooperation, was founded for soaring goals to promote
@@ -224,7 +261,7 @@ your ground with common allies and enemies.</p>
           </div>-->
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-4x fa-heartbeat text-primary mb-3 sr-icon-2"></i>
+			<img src="https://image.ibb.co/iXPm80/hrc.png">
               <h3 class="mb-3">HRC</h3>
               <p class="text-muted mb-0 committefont">Address violations, promote human rights assistance and
 education, help develop international human rights law, review
@@ -239,7 +276,7 @@ our rights for all people in CMRTC MUN ’18.</p>
           </div>
          <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-4x fa-paper-plane text-primary mb-3 sr-icon-1"></i>
+			<img src="https://image.ibb.co/fhR5RL/securitycouncil.png">
               <h3 class="mb-3">UNSC</h3>
               <p class="text-muted mb-0 rightalign committefont"><b>“War cannot be humanized it can be only abolished”</b><br \>
 The Security Council has primary responsibility, under
@@ -371,20 +408,26 @@ consequences, UNSC at CMRTC MUN is the right place to be.</p>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4 ml-auto text-center">
+          <div class="col-lg-3 ml-auto text-center">
             <i class="fas fa-phone fa-3x mb-3 sr-contact-1"></i>
             <p>+91 8686525757</p>
           </div>
-          <div class="col-lg-4 mr-auto text-center">
+          <div class="col-lg-3 mr-auto text-center">
             <i class="fas fa-envelope fa-3x mb-3 sr-contact-2"></i>
             <p>
               <a href="mailto:thelexisclub@gmail.com">thelexisclub@gmail.com</a>
-            </p>
-						<a target="_blank" title="Follow us on Facebook" href="https://www.facebook.com/thelexisclub"><img alt="Follow us on Facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook30x30.png" align="middle" border=0 ></a>
-			<a target="_blank" title="Follow us on Instagram" href="https://www.instagram.com/thelexisclub"><img alt="Follow us on Instagram" src="https://www.freepnglogos.com/uploads/instagram-logos-png-images-free-download-2.png" width=40 align="middle" border=0 ></a>
+            </p>	
           </div>
-        </div>
-      </div>
+		  <div class="col-lg-2 mr-auto text-center">
+		  <i class="fa fab fa-facebook-square fa-3x mb-3"></i>
+			<p><a href="https://www.facebook.com/thelexisclub">Facebook</a></p>
+			</div>
+			<div class="col-lg-2 mr-auto text-center">
+			<i class="fa fab fa-instagram fa-3x mb-3"></i>
+        <p><a href="https://www.instagram.com/the_lexis_club">@the_lexis_club</a></p>
+		</div>
+		</div>
+		</div>
     </section>
     
     <div>
