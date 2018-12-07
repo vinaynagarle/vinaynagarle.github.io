@@ -134,14 +134,14 @@
     </header>
 	<div class="row">
 	<div class="col-lg-12 text-center">
-	<p class="section-heading timertext timerfont">Meet you in</p>
-	<p id="timer" class=" btn timer btn-xl">Coming Soon</p><br />
+	<p class="section-heading timertext timerfont">Meet you</p>
+	<p id="timer" class=" btn timer btn-xl"></p><br />
 <iframe width="380" height="315" src="https://www.youtube.com/embed/xODLt5_2378?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 </div>
 <script>
 // Timer Code for the MUN event
-var countDownDate = new Date("Jan 23, 2019 15:37:25").getTime();
+var countDownDate = new Date("Jan 23, 2018 15:37:25").getTime();
 
 var x = setInterval(function() {
 
@@ -159,7 +159,7 @@ var x = setInterval(function() {
      
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("timer").innerHTML = "EXPIRED";
+        document.getElementById("timer").innerHTML = "Soon";
     }
 }, 1000);
 </script>
