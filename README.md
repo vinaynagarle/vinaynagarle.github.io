@@ -1,1 +1,3 @@
-Test Source Code for the CMR MUN Website. The code here is all under testing and is not complete. 
+Source Code For the CMRTCMUN 2019 Website.
+The Trickster Web v10.1.6.9
+Bootstrap v4.1 and Startbootstrap v5.x 
